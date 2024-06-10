@@ -26,7 +26,7 @@ const SignUpForm = () => {
     },
   });
 
-  // 2. Define a submit handler.
+  // 2. Define a submit handler. 
   function onSubmit(values: z.infer<typeof SignupValidation>) {
     console.log(values);
   }
@@ -43,24 +43,24 @@ const SignUpForm = () => {
           name="username"
           render={({ field }) => (
             <FormItem>
-              <FormLabel>name</FormLabel>
+              <FormLabel>Name</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Full Name" {...field} />
               </FormControl>
 
               <FormLabel>Username</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="UserName" {...field} />
               </FormControl>
 
-              <FormLabel>email</FormLabel>
+              <FormLabel>Email</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Email" {...field} />
               </FormControl>
 
-              <FormLabel>password</FormLabel>
+              <FormLabel>Password</FormLabel>
               <FormControl>
-                <Input placeholder="shadcn" {...field} />
+                <Input placeholder="Password" {...field} />
               </FormControl>
               
               <FormDescription>
